@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JITHU</title>
+</head>
+<link rel="stylesheet" href="./STYLE.CSS">
+<body >
+    <div class="container">
+        <svg id="svg" width="100vw" height="100vw" stroke="grey" stroke-width="0.4" stroke-dasharray=" 1.5 1 " viewBox="0 0 350 350" fill="none"  stroke-width="0.3">
+            <path d=" M 0 0   L 0 350
+          M 10 0  L 10 350
+          M 20 0  L 20 350
+          M 30 0  L 30 350
+          M 40 0  L 40 350
+          M 50 0  L 50 350
+          M 60 0  L 60 350
+          M 70 0  L 70 350
+          M 80 0  L 80 350
+          M 90 0  L 90 350
+          M 100 0 L 100 350
+          M 110 0  L 110 350
+          M 120 0  L 120 350
+          M 130 0  L 130 350
+          M 140 0  L 140 350
+          M 150 0  L 150 350
+          M 160 0  L 160 350
+          M 170 0  L 170 350
+          M 180 0  L 180 350
+          M 190 0  L 190 350
+          M 200 0 L 200 350
+          M 210 0  L 210 350
+          M 220 0  L 220 350
+          M 230 0  L 230 350
+          M 240 0  L 240 350
+          M 250 0  L 250 350
+          M 260 0  L 260 350
+          M 270 0  L 270 350
+          M 280 0  L 280 350
+          M 290 0  L 290 350
+          M 300 0 L 300 350
+          M 310 0  L 310 350
+          M 320 0  L 320 350
+          M 330 0  L 330 350
+          M 340 0  L 340 350
+          M 350 0  L 350 350
+          Z" />
+          <path d=" M 0 0 L 350 0
+          M 0 10 L 350 10
+          M 0 20 L 350 20
+          M 0 30 L 350 30
+          M 0 40 L 350 40
+          M 0 50 L 350 50
+          M 0 60 L 350 60
+          M 0 70 L 350 70
+          M 0 80 L 350 80
+          M 0 90 L 350 90
+          M 0 100 L 350 100
+          M 0 110 L 350 110
+          M 0 120 L 350 120
+          M 0 130 L 350 130
+          M 0 140 L 350 140
+          M 0 150 L 350 150
+          M 0 160 L 350 160
+          M 0 170 L 350 170
+          M 0 180 L 350 180
+          M 0 190 L 350 190
+          M 0 200 L 350 200
+          M 0 210 L 350 210
+          M 0 220 L 350 220
+          M 0 230 L 350 230
+          M 0 240 L 350 240
+          M 0 250 L 350 250
+          Z" />
+          <path stroke-width="2" stroke-dasharray="none" stroke="black" id="path"/>
+          <g id="grp" stroke-width="1" stroke-dasharray="none"></g>
+          <g id="cirs" stroke="black" stroke-width="2" stroke-dasharray="none" ></g>
+          <rect  stroke="black" stroke-width="2" stroke-dasharray="none" id="rect" >
+        </svg>
+    
+        <div class="tools">
+        <button class="btn1" onclick="pencircle()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" width="35" height="35" class="w-6 h-6">
+                <circle cx="12" cy="12" r="10" >
+              </svg> </button>
+        <button class="btn2" onclick="OnRect()" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="35" height="35" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H17 M18 14 18 6" />
+            <circle stroke="black" stroke-width="1.5" fill="black" cx="18" cy="6" r="2" >
+          </svg></button>
+        <button class="btn3" onclick="pendraw()" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="35" height="35" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+          </svg>
+          </button>
+        <button class="btn4" onclick="drag()" ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="33" height="33" stroke-width="2" >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+          </svg></button>
+          <button class="btn5" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="36" height="36" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </svg>
+          </button>
+          <button class="btn6" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="35" height="35" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-6 6m0 0l-6-6m6 6V9a6 6 0 0112 0v3" />
+          </svg>
+          </button>
+          <button class="btn7" onclick="swaps()" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="37" height="37" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          
+          </button>
+    </div>
+    </div>
+    
+    <script src="./JAVA.JS"></script>
+</body>
+</html>
+
+
+
+
+
+
+
